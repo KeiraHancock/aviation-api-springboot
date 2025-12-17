@@ -21,9 +21,21 @@ CRUD:
 ./mvnw test
 ```
 ## Docker
+## Running the Backend with Docker
+
+### Prerequisites
+- Docker + Docker Compose installed
+### Start API + Database
 ```
-docker build -t aviation-api .
-docker run -p 8080:8080 aviation-api
+docker-compose up --build
 ```
+### Stop Containers
+```
+docker-compose down
+```
+### Notes
+API runs at: http://localhost:8080
+PostgreSQL runs at: localhost:5432
+
 
 ---
